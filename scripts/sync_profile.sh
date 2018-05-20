@@ -4,6 +4,11 @@
 
 TOP=$(pwd | xargs dirname)
 
-cd ${TOP}
-git status
+cd $TOP
+git pull origin master
 
+rm ~/.bash_profile
+cat $TOP/bash_profile.txt >> ~/.bash_profile
+source ~/.bash_profile
+
+echo done.

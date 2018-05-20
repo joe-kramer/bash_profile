@@ -1,30 +1,34 @@
+### VARIABLES ###
+export PS1="\u@\h \[\033[92m\]\w\[\033[95m\] \$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\[\033[00m\] $ "
+export PATH="$PATH:~/Scripts/:/usr/local/sbin/"
+export CLICOLOR=1
+
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export GRADLE_HOME=/usr/local/Cellar/gradle/4.6
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+
+### Aliases ###
+alias ls='ls -lhGF'
 alias profile='vi ~/.bash_profile'
 alias sourceprofile='source ~/.bash_profile'
-alias ls='ls -GFhl'
+alias mysql=/usr/local/mysql-5.7.20-macos10.12-x86_64/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
-alias desktop='cd ~/Desktop'
+alias cd1='cd ..'
+alias cd2='cd ../../'
+alias cd3='cd ../../../'
+alias cd4='cd ../../../../'
+alias cd5='cd ../../../../../'
+alias cd6='cd ../../../../../../'
+alias cd7='cd ../../../../../../../'
+alias cd8='cd ../../../../../../../../'
+alias cd9='cd ../../../../../../../../../'
+
 alias scripts='cd ~/Scripts'
+alias desktop='cd ~/Desktop'
+alias projects='cd ~/Projects/ispot/'
 alias downloads='cd ~/Downloads'
 
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-
-eval $(/usr/libexec/path_helper -s)
-export PATH=/usr/local/bin:$PATH
-export EDITOR='atom -w'
-export PGDATA=/usr/local/var/postgres
-export PGHOST=/tmp
-export JAVA_HOME=`/usr/libexec/java_home -v 9`
-export MAVEN_HOME=/Users/joekramer/dev/tools/apache-maven-3.5.0
-alias mysql=/usr/local/mysql/bin/mysql
-alias mysql=/usr/local/mysql/bin/mysql
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-# PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-# export PATH
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-# PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-# export PATH=~/.local/bin:$PATH
+alias vissh='vi ~/.ssh/config'
+alias catssh='cat ~/.ssh/config'

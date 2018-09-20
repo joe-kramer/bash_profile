@@ -11,3 +11,5 @@ cat bash_profile.txt >> ~/.bash_profile
 source ~/.bash_profile
 
 echo done.
+
+#Test
